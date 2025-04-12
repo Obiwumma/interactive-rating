@@ -57,3 +57,16 @@ p{
   font-weight: 700;
   letter-spacing: .1rem;
 }
+.submit_button button:hover{
+  background-color: #ffffff;
+  cursor: pointer;
+}
+.rating:focus{
+  background-color: #ffffff;
+  color: hsl(216, 12%, 8%);
+}
+.rating:hover{
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(216, 12%, 8%);
+  cursor: pointer;
+}
