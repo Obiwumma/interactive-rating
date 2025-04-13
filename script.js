@@ -11,17 +11,16 @@ const successPage = document.getElementById("success")
 
 const submitBtn = document.getElementById("submit")
 
-submitBtn.addEventListener("click", () => {
-  mainPage.classList.add("hidden")
-  successPage.classList.remove("hidden")
-  successPage.classList.add("active")
-})
 
 const rateBtn = [ratingOne, ratingTwo, ratingThree,ratingFour, ratingFive]
 
 rateBtn.forEach(element => {
   element.addEventListener("click", () => {
-    
+    submitBtn.addEventListener("click", () => {
+      mainPage.classList.add("hidden")
+      successPage.classList.remove("hidden")
+      successPage.classList.add("active")
+    });
     if (element == ratingOne) {
       let rateNum = 1
       selectMsg.innerText = `You selected ${rateNum} out of 5`
@@ -45,3 +44,4 @@ rateBtn.forEach(element => {
     }
   })
 });
+
