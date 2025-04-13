@@ -4,6 +4,8 @@ const ratingThree = document.getElementById("3")
 const ratingFour = document.getElementById("4")
 const ratingFive = document.getElementById("5")
 
+const selectMsg = document.getElementById("selected")
+
 const mainPage = document.getElementById("main")
 const successPage = document.getElementById("success")
 
@@ -21,15 +23,25 @@ rateBtn.forEach(element => {
   element.addEventListener("click", () => {
     
     if (element == ratingOne) {
-      console.log("one")
+      let rateNum = 1
+      selectMsg.innerText = `You selected ${rateNum} out of 5`
+      console.log(selectMsg.innerText);
     } else if (element == ratingTwo) {
-      console.log("two")
+      let rateNum = 2
+      selectMsg.innerText = `You selected ${rateNum} out of 5`
+      console.log(selectMsg.innerText);
     } else if (element == ratingThree) {
-      console.log("three")
+      let rateNum = 3
+      selectMsg.innerText = `You selected ${rateNum} out of 5`
+      console.log(selectMsg.innerText);
     } else if (element == ratingFour) {
-      console.log("four")
+      let rateNum = 4
+      selectMsg.innerText = `You selected ${rateNum} out of 5`
+      console.log(selectMsg.innerText);
     } else {
-      console.log("five")
+      let rateNum = 5
+      selectMsg.innerText = `You selected ${rateNum} out of 5`
+      console.log(selectMsg.innerText);
     }
   })
 });
